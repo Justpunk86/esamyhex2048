@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'></meta>
+  <title>esa.My2048</title>
+  <link rel="stylesheet" type="text/css"
+  href="http:\\localhost\my2048\my2048.css">
+  <link href="http:\\localhost\my2048\#test3.html">
+</head>
+<body>
+<div class='serverSelect'>
+
+  <select id = "url-server">
+    <option id = "remote" value = "http://68f02c80-3bed-4e10-a747-4ff774ae905a.pub.instances.scw.cloud"> Удаленный сервер </option>
+    <option id = "localhost" selected value = "http://localhost:13337" > Локальный сервер </option >
+  </select>
+
+<p></p>
+
+  <div class="gameRadius" data-radius="0">Select radius:
+    <span><button id="radius2" value=2>2</button></span>
+    <span><button id="radius3" value=3>3</button></span>
+    <span><button id="radius4" value=4>4</button></span>
+  </div>
+
+</div>
+
+  <div class="gameCanvas">
+    <canvas id="canvas" width="600" height="600"></canvas>
+  </div>
+
+  <div id="gameStatus" class="gameStatus" data-status="plays">Game Status:
+    <span id="statusValue"></span>
+  </div>
+
+  <div class='gamePad'>Use q, w, e, a, s, d keys for move</div>
+
+<script src="http:\\localhost\my2048\my2048v5.js"></script>
+</body>
+</html>
